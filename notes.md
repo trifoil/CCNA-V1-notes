@@ -1,4 +1,4 @@
-## top-10 commands
+## top-4 commands
 
 1) show the running config
 ```
@@ -11,12 +11,24 @@ Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# banner motd #Authorized Access Only#
 ```
 
-3) hostname
+3) show ip interfaces 
+```
+show ip interface brief
+```
+
+4) hostname
 ```
 Switch# configure terminal
 Switch(config)# hostname Sw-Floor-1
 Sw-Floor-1(config)#
 ```
+
+* stars with a letter
+* contain no spaces
+* end with a letter or digit
+* use only letters, digits, and dashes
+* be less than 64 characters in length
+
 
 
 ## passwords
@@ -83,3 +95,31 @@ erase startup-config
 ```
 dir nvram
 ```
+
+## ip addresses
+
+ipv4 -> 32bits -> the structure of an IPv4 address is called dotted decimal notation
+ipv6 -> 128bits
+
+media factors :
+* Distance
+* Environment
+* Amount
+* Cost
+
+SVI (switch virtual interface) does not have a physical port associated. default is vlan1
+
+## switch vlan add ip
+```
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# interface vlan 1
+Sw-Floor-1(config-if)# ip address 192.168.1.20 255.255.255.0
+Sw-Floor-1(config-if)# no shutdown
+Sw-Floor-1(config-if)# exit
+Sw-Floor-1(config)# ip default-gateway 192.168.1.1
+```
+
+the default gateway is also configured
+
+## notes
+
