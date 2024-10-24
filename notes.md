@@ -56,3 +56,30 @@ Sw-Floor-1(config)# service password-encryption
 Sw-Floor-1(config)#
 ```
 
+## configurations
+
+1) write config
+```
+write memory
+```
+
+or
+
+```
+copy running-config startup-config
+```
+
+2) reboot the device (without saving conf)
+```
+reload
+```
+
+3) erase config
+```
+erase startup-config
+```
+
+4) show what's in a directory (i.e. nvram)
+```
+dir nvram
+```
