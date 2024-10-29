@@ -272,6 +272,64 @@ set of protocols that work together to provide comprehensive network communicati
     * layer 3  = network layer => source IP to dest IP 
     * layer 2 = data link =>  dest MAC to source MAC
 
+
+ ## physical layer
+
+1) components
+2) encoding     
+    method of converting a stream of data bits into a predefined "code"
+3) signaling
+    generate the electrical, optical, or wireless signals that represent the "1" and "0" on the media
+4) bandwidth    
+    capacity at which a medium can carry data
+    * Latency   
+    delay between sending and receiving
+    * Throughput
+    how much data sent withing a given time
+    * Goodput
+    usable data transferred over time
+5) utp 
+    * Category 3 was originally used for voice communication over voice lines, but later used for data transmission. not braided
+    * Category 5 and 5e is used for data transmission. Category 5 supports 100Mbps and Category 5e supports 1000 Mbps braided
+    * Category 6 has an added separator between each wire pair to support higher speeds. Category 6 supports up to 10 Gbps.
+    * Category 7 also supports 10 Gbps.
+    * Category 8 supports 40 Gbps.
+
+    ![alt text](image-5.png)
+
+    ![alt text](image-6.png)
+
+6) fiber 
+    * single mode   
+    lower dispersion, single ray of light, laser
+    * multimode     
+    higher dispersion, led emitters
+    * connectors
+        * straight-tip
+        * subscriber connector
+        * lucent connector
+        * duplex multimode lc connector
+    * cords
+        * sc-sc multimode patch (orange)
+        * lc-lc single mode patch (yellow)
+        * st-lc multimode patch (orange)
+        * sc-st single mode patch (yellow)
+7) wireless 
+    * properties
+        * coverage area
+        * interference
+        * security
+        * shared medium (half duplex)
+    * types
+        * Wi-Fi (IEEE 802.11)
+        * Bluetooth (IEEE 802.15)   up to 100 m ??
+        * WiMAX (IEEE 802:16)
+        * Zigbee (IEEE 802.15.4)
+
+## number systems
+
+
+
 ## notes
 
 1) which two functions are provided to users by the context-sensitive help feature of the Cisco IOS CLI? (Choose two.)
@@ -308,3 +366,9 @@ set of protocols that work together to provide comprehensive network communicati
 
 10) which interface allows remote management of a Layer 2 switch?
     * the switch virtual interface (allows use of ssh/telnet)
+
+11) crosstalk
+    * one wire -> interferes with another
+
+12) console cable 
+    * console cable = rollover cable
